@@ -14,7 +14,25 @@ public class Student {
 	private String name;
 	private int age;
 	private String city;
+	private Certificate certi;
 	
+	
+	public Student(String name, int age, String city, Certificate certi) {
+		super();
+		this.name = name;
+		this.age = age;
+		this.city = city;
+		this.certi = certi;
+	}
+
+	public Certificate getCerti() {
+		return certi;
+	}
+
+	public void setCerti(Certificate certi) {
+		this.certi = certi;
+	}
+
 	public Student() {
 		
 	}
@@ -53,7 +71,7 @@ public class Student {
 
 	@Override
 	public String toString() {
-		return "Student [id=" + id + ", name=" + name + ", age=" + age + ", city=" + city + "]";
+		return "Student [id=" + id + ", name=" + name + ", age=" + age + ", city=" + city + ", certi=" + certi + "]";
 	}
 
 	public Student(String name, int age, String city) {
